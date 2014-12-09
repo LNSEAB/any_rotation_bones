@@ -20,30 +20,6 @@ namespace any_rotation_bones_plugin
             pmx_ = pmx;
         }
 
-        private void edge_check_box_CheckedChanged(object sender, EventArgs e)
-        {
-            if ( edge_check_box.Checked == true ) {
-                zero_parent_check_box.Enabled = true;
-                edge_bone_name_box.Enabled = true;
-            }
-            else {
-                zero_parent_check_box.Enabled = false;
-                edge_bone_name_box.Enabled = false;
-            }
-        }
-
-        private void target_bone_box_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if ( target_bone_box.SelectedIndex == 0 ) {
-                last_bone_check_box.Enabled = false;
-                last_bone_check_box.Enabled = false;
-            }
-            else {
-                last_bone_check_box.Enabled = true;
-                last_bone_check_box.Enabled = true;
-            }
-        }
-
         private void plugin_form_Shown(object sender, EventArgs e)
         {
             foreach ( var i in pmx_.Bone.Select( (value, index) => new { value, index } ) ) {
@@ -66,8 +42,19 @@ namespace any_rotation_bones_plugin
             }
 
             edge_check_box_CheckedChanged( sender, e );
-            target_bone_box_SelectedIndexChanged( sender, e );
             selected_bone_pos_radio_box_CheckedChanged( sender, e );
+        }
+
+        private void edge_check_box_CheckedChanged(object sender, EventArgs e)
+        {
+            if ( edge_check_box.Checked == true ) {
+                zero_parent_check_box.Enabled = true;
+                edge_bone_name_box.Enabled = true;
+            }
+            else {
+                zero_parent_check_box.Enabled = false;
+                edge_bone_name_box.Enabled = false;
+            }
         }
 
         private void selected_bone_pos_radio_box_CheckedChanged(object sender, EventArgs e)

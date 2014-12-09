@@ -94,7 +94,6 @@
             this.target_bone_box.Name = "target_bone_box";
             this.target_bone_box.Size = new System.Drawing.Size(175, 20);
             this.target_bone_box.TabIndex = 3;
-            this.target_bone_box.SelectedIndexChanged += new System.EventHandler(this.target_bone_box_SelectedIndexChanged);
             // 
             // edge_check_box
             // 
@@ -102,7 +101,7 @@
             this.edge_check_box.Location = new System.Drawing.Point(15, 180);
             this.edge_check_box.Name = "edge_check_box";
             this.edge_check_box.Size = new System.Drawing.Size(137, 16);
-            this.edge_check_box.TabIndex = 4;
+            this.edge_check_box.TabIndex = 8;
             this.edge_check_box.Text = "エッジ調整ボーンの生成";
             this.edge_check_box.UseVisualStyleBackColor = true;
             this.edge_check_box.CheckedChanged += new System.EventHandler(this.edge_check_box_CheckedChanged);
@@ -115,7 +114,7 @@
             this.zero_parent_check_box.Location = new System.Drawing.Point(32, 202);
             this.zero_parent_check_box.Name = "zero_parent_check_box";
             this.zero_parent_check_box.Size = new System.Drawing.Size(120, 16);
-            this.zero_parent_check_box.TabIndex = 5;
+            this.zero_parent_check_box.TabIndex = 9;
             this.zero_parent_check_box.Text = "0番ボーンを親にする";
             this.zero_parent_check_box.UseVisualStyleBackColor = true;
             // 
@@ -125,7 +124,7 @@
             this.label3.Location = new System.Drawing.Point(13, 282);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 12);
-            this.label3.TabIndex = 6;
+            this.label3.TabIndex = 12;
             this.label3.Text = "任意中心回転ボーン名";
             // 
             // any_rotation_name_box
@@ -133,7 +132,7 @@
             this.any_rotation_name_box.Location = new System.Drawing.Point(15, 297);
             this.any_rotation_name_box.Name = "any_rotation_name_box";
             this.any_rotation_name_box.Size = new System.Drawing.Size(229, 19);
-            this.any_rotation_name_box.TabIndex = 7;
+            this.any_rotation_name_box.TabIndex = 13;
             this.any_rotation_name_box.Text = "任意中心回転";
             // 
             // label4
@@ -142,7 +141,7 @@
             this.label4.Location = new System.Drawing.Point(13, 319);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 12);
-            this.label4.TabIndex = 8;
+            this.label4.TabIndex = 14;
             this.label4.Text = "親ボーン名";
             // 
             // parent_bone_name_box
@@ -150,7 +149,7 @@
             this.parent_bone_name_box.Location = new System.Drawing.Point(15, 334);
             this.parent_bone_name_box.Name = "parent_bone_name_box";
             this.parent_bone_name_box.Size = new System.Drawing.Size(229, 19);
-            this.parent_bone_name_box.TabIndex = 9;
+            this.parent_bone_name_box.TabIndex = 15;
             this.parent_bone_name_box.Text = "親";
             // 
             // label5
@@ -159,7 +158,7 @@
             this.label5.Location = new System.Drawing.Point(13, 400);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 10;
+            this.label5.TabIndex = 18;
             this.label5.Text = "表示枠名";
             // 
             // node_name_box
@@ -167,7 +166,7 @@
             this.node_name_box.Location = new System.Drawing.Point(15, 415);
             this.node_name_box.Name = "node_name_box";
             this.node_name_box.Size = new System.Drawing.Size(229, 19);
-            this.node_name_box.TabIndex = 11;
+            this.node_name_box.TabIndex = 19;
             this.node_name_box.Text = "任意中心回転";
             // 
             // ok_button
@@ -176,7 +175,7 @@
             this.ok_button.Location = new System.Drawing.Point(89, 456);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(75, 23);
-            this.ok_button.TabIndex = 12;
+            this.ok_button.TabIndex = 20;
             this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
             // 
@@ -186,7 +185,7 @@
             this.cancel_button.Location = new System.Drawing.Point(171, 456);
             this.cancel_button.Name = "cancel_button";
             this.cancel_button.Size = new System.Drawing.Size(75, 23);
-            this.cancel_button.TabIndex = 13;
+            this.cancel_button.TabIndex = 21;
             this.cancel_button.Text = "キャンセル";
             this.cancel_button.UseVisualStyleBackColor = true;
             // 
@@ -196,7 +195,7 @@
             this.last_bone_check_box.Location = new System.Drawing.Point(15, 224);
             this.last_bone_check_box.Name = "last_bone_check_box";
             this.last_bone_check_box.Size = new System.Drawing.Size(179, 16);
-            this.last_bone_check_box.TabIndex = 14;
+            this.last_bone_check_box.TabIndex = 10;
             this.last_bone_check_box.Text = "ターゲットを最後の親ボーンにする";
             this.last_bone_check_box.UseVisualStyleBackColor = true;
             // 
@@ -206,7 +205,7 @@
             this.begin_rotation_check_box.Location = new System.Drawing.Point(15, 246);
             this.begin_rotation_check_box.Name = "begin_rotation_check_box";
             this.begin_rotation_check_box.Size = new System.Drawing.Size(167, 16);
-            this.begin_rotation_check_box.TabIndex = 15;
+            this.begin_rotation_check_box.TabIndex = 11;
             this.begin_rotation_check_box.Text = "任意中心回転ボーンから開始";
             this.begin_rotation_check_box.UseVisualStyleBackColor = true;
             // 
@@ -234,7 +233,7 @@
             this.target_pos_radio_box.Location = new System.Drawing.Point(15, 103);
             this.target_pos_radio_box.Name = "target_pos_radio_box";
             this.target_pos_radio_box.Size = new System.Drawing.Size(152, 16);
-            this.target_pos_radio_box.TabIndex = 18;
+            this.target_pos_radio_box.TabIndex = 5;
             this.target_pos_radio_box.TabStop = true;
             this.target_pos_radio_box.Text = "ターゲットと同じ位置に生成";
             this.target_pos_radio_box.UseVisualStyleBackColor = true;
@@ -245,7 +244,7 @@
             this.selected_bone_pos_radio_box.Location = new System.Drawing.Point(15, 125);
             this.selected_bone_pos_radio_box.Name = "selected_bone_pos_radio_box";
             this.selected_bone_pos_radio_box.Size = new System.Drawing.Size(161, 16);
-            this.selected_bone_pos_radio_box.TabIndex = 19;
+            this.selected_bone_pos_radio_box.TabIndex = 6;
             this.selected_bone_pos_radio_box.Text = "指定したボーンの位置に生成";
             this.selected_bone_pos_radio_box.UseVisualStyleBackColor = true;
             this.selected_bone_pos_radio_box.CheckedChanged += new System.EventHandler(this.selected_bone_pos_radio_box_CheckedChanged);
@@ -256,7 +255,7 @@
             this.selected_bone_pos_combo_box.Location = new System.Drawing.Point(28, 147);
             this.selected_bone_pos_combo_box.Name = "selected_bone_pos_combo_box";
             this.selected_bone_pos_combo_box.Size = new System.Drawing.Size(173, 20);
-            this.selected_bone_pos_combo_box.TabIndex = 20;
+            this.selected_bone_pos_combo_box.TabIndex = 7;
             // 
             // origin_pos_radio_box
             // 
@@ -264,7 +263,7 @@
             this.origin_pos_radio_box.Location = new System.Drawing.Point(14, 81);
             this.origin_pos_radio_box.Name = "origin_pos_radio_box";
             this.origin_pos_radio_box.Size = new System.Drawing.Size(80, 16);
-            this.origin_pos_radio_box.TabIndex = 21;
+            this.origin_pos_radio_box.TabIndex = 4;
             this.origin_pos_radio_box.TabStop = true;
             this.origin_pos_radio_box.Text = "原点に生成";
             this.origin_pos_radio_box.UseVisualStyleBackColor = true;
