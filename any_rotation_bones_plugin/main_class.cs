@@ -152,6 +152,7 @@ namespace any_rotation_bones_plugin
                 }
             
                 PEPlugin.Pmx.IPXNode node = PEPlugin.PEStaticBuilder.Pmx.Node();
+                node.Name = form.node_name_box.Text;
 
                 make( pmx, node, form );
 
